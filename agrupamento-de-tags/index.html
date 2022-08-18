@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de agrupamento de tags</title>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h1 {
+                text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+
+            body {
+                background-color: gray; /* tag para mudar a cor de fundo */
+            }
+
+            header {
+                background-color: white;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+            
+            nav {
+                padding: 5px;
+                background-color: gray;
+                box-shadow: 1px 4px 7px 0px rgb(0 0 0 / 76%);
+            }
+
+            nav > a {
+                text-decoration: none;
+                color: white;
+                padding-right: 30px;
+            }
+
+            nav > a:hover {
+                text-decoration: underline;
+                font-weight: bold;
+            }
+
+            main {
+                background-color: white;
+                padding: 10px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+                border-radius: 0px 20px;
+                box-shadow: 3px 4px 6px rgb(0 0 0 / 50%);
+            }
+
+            #assuntos {
+                background-color: gray;
+                color: white;
+                margin-bottom: 10px;
+                padding: 5px;
+            }
+
+            #assuntos > p {
+                margin: 0%;
+            }
+
+            #noticias {
+                background-color: lightgray;
+                padding: 5px;
+                box-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+            }
+            
+            #escrito-por {
+                background-color: gray;
+                color: white;
+                padding: 10px;
+            }
+
+            #escrito-por > p { /*código para tirar a margem extra criada pelo padding */
+                margin: 0;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+
+            footer > p {
+                margin: 0px;
+            }
+
+            div#bola {
+                width: 100px;
+                height: 100px;
+                background-color: white;
+                margin: 10px;
+                border-radius: 50%;
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Parte central do site -->
+        <section id="assuntos"><p>Section usada para definir assuntos</p></section>
+        <section id="noticias">
+            <article>
+                <h2>Título da Section</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quas, suscipit inventore vel quibusdam cupiditate corporis est, perspiciatis possimus, ullam sed? Voluptatibus dolore similique doloremque id eveniet obcaecati labore adipisci.</p>
+                <aside id="escrito-por">
+                    <p>Escrito por Eduardo Sanches Pereira</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Eduardo Sanches Pereira</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

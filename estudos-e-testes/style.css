@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.28) 1px 1px 3px;
+    color: #731606;
+}
+
+h1:hover {
+    color: aqua;
+    transition: .3s;
+}
+
+h2, p {
+    margin-top: 20px;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #F22F0C, #BF250A);
+    height: 100vh;
+}
+
+main {
+    background-color: #F46D56;
+    margin: 50px auto 50px;
+    width: 80vw;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.435) 5px 5px 10px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Boxes em HTML e CSS</title>
+    <style>
+        * {             
+            border: 0;
+            box-sizing: border-box;
+            margin-top: 4px;
+            border-radius: 10px;
+            font: bold 20px sans-serif;
+            color: white;
+        }
+
+        .box1 {
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            box-sizing: border-box;
+            padding-top: 50px;
+            background-color: red;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .box2 {
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            padding-top: 50px;
+            background-color: green;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .box3 {
+            width: 400px;
+            height: 400px;
+            margin: 20px;
+            padding-top: 50px;
+            background-color: blue;
+            display: inline-block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <head>
+        <div class="box1">Teste 1</div>
+        <div class="box2">Texto 2</div>
+        <div class="box3">Texto 3</div>
+    </head>
+</body>
+</html>
