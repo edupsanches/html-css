@@ -14,5 +14,17 @@
         <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
         <img src="imagens/foto-g.png" alt="Imagem com tamanho flexível">
     </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir arquivos de áudio em HTML.</p>
+    
+    <h2>Forma 1</h2>
+    <p>Dessa maneira utilizamos somente a tag &lt;audio&gt; e adicionamos o parâmetro controls.</p>
+    <audio src="midias/guanacast-33.mp3" controls></audio>
+    <h2>Forma 2</h2>
+    <p>Também utilizando a tag &lt;audio&gt;, porém utilizando mais parâmetros "SRC" dentro da tag.</p>
+    <audio preload="metadata" controls>
+        <source src="midias/guanacast-33.mp3" type="audio/mp3">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midias/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
 </body>
 </html>
