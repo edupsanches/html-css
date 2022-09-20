@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: black;
+}
+
+.voltar {
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
