@@ -20,6 +20,7 @@ main {
 }
 
 h1 {
+    font-size: 2.5em;
     text-align: center;
     padding: 0px 0px 20px;
     color: #164C45;
@@ -35,4 +36,5 @@ h2 {
 p {
     color: #16232E;
     text-align: justify;
+    padding: 0 0 10px;
 }
