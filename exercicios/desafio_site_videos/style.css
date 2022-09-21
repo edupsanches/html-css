@@ -4,25 +4,44 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 3em;
     text-align: center;
     color: white;
 }
 
+.videos_cima {
+    display: flex;
+    justify-content: center;
+}
+
+.videos_baixo {
+    display: flex;
+    justify-content: center;
+}
+
 a {
-    text-align: center;
+    color: white;
+    text-decoration: none;
 }
 
-body {
-    background-color: black;
+.completo {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
 
-.voltar {
+body > .curso {
+    display: block;
     margin: auto;
 }
 
-h2 {
-    text-align: center;
-    color: white;
+.voltar {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
 }
