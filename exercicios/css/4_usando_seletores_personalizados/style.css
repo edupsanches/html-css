@@ -13,7 +13,7 @@ body {
     background-color: rgba(0, 255, 255, 0.448);
 }
 
-h1#principal {
+#principal {
     text-align: center;
     color: white;
     background-color: rgb(24, 83, 83);
@@ -28,7 +28,8 @@ h2 {
 }
 
 .basico {
-    color: rgb(8, 120, 120)
+    font-weight: bold;
+    color: rgb(5, 169, 65)
 }
 
 .intermediario {
@@ -37,4 +38,8 @@ h2 {
 
 .avancado {
     color: rgb(120, 8, 8);
+}
+
+.destaque {
+    background-color: rgba(244, 212, 7, 0.51);
 }
