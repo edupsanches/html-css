@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: lightgray;
+        }
+
+        header {
+            background-color: white;
+            padding: 40px 10px 10px 10px;
+            margin: 10px;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        nav {
+            width: 330px;
+            background-color: darkgray;
+            padding: 5px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: white;
+            padding: 25px 10px 10px 10px;
+            margin: 10px;
+        }
+
+        .titulo {
+            margin-top: 20px;
+            padding: 30px 10px;
+        }
+
+        #noticias > article > p {
+            padding-left: 10px;
+        }
+
+        #noticias {
+            background-color: lightgray;
+            padding-bottom: 5px;
+        }
+
+        .autor_artigo {
+            padding: 3px;
+            background-color: darkgrey;
+            margin: 10px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            background-color: black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2 class="titulo">Notícia sobre o Brasil</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, consectetur eum necessitatibus ut voluptatum aut labore natus quam maxime amet veniam tempora optio quibusdam, ea ratione, ab impedit sequi qui?</p>
+                <aside class="autor_artigo">
+                    Artigo escrito por Fulano da Silva
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Estudo desenvolvido por <strong>Eduardo</strong></p>
+    </footer>
+</body>
+</html>
