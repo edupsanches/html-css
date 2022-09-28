@@ -24,14 +24,19 @@
         }
 
         h1 {
+            display: flexbox;
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.573);
             margin-bottom: 40px;
             text-align: center;
         }
 
         nav {
-            width: 330px;
+            width: 300px;
             background-color: darkgray;
             padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.573);
         }
 
         nav > a:hover {
@@ -41,13 +46,13 @@
         nav > a {
             text-decoration: none;
             color: white;
-            margin-right: 30px;
         }
 
         main {
             background-color: white;
             padding: 25px 10px 10px 10px;
             margin: 10px;
+            border-radius: 0px 50px;
         }
 
         .titulo {
@@ -60,6 +65,7 @@
         }
 
         #noticias {
+            border-radius: 0px 38px;
             background-color: lightgray;
         }
 
@@ -68,9 +74,11 @@
         }
 
         .autor_artigo {
+            border-radius: 0px 38px 0px 38px;
             padding: 3px;
             background-color: darkgrey;
-            margin: 10px 10px 5px;
+            margin: 10px 10px 5px 10px;
+            text-indent: 15px;
         }
 
         footer {
