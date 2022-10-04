@@ -39,7 +39,7 @@
 
         /* USANDO FLEX */
 
-        .frontboard {
+        /* .frontboard {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -48,7 +48,7 @@
         }
 
         .quadro1 {
-            width: 300px;
+            min-width: 300px;
             height: 300px;
             text-align: center;
             background-color: purple;
@@ -58,21 +58,49 @@
         }
 
         .quadro2 {
-            width: 300px;
+            min-width: 300px;
+            height: 300px;
+            text-align: center;
+            background-color: aquamarine;
+            line-height: 300px;
+            margin-top: 10px;
+        } */
+
+        .frontboard {
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .quadro1 {
+            min-width: 300px;
+            height: 300px;
+            text-align: center;
+            background-color: purple;
+            color: white;
+            line-height: 300px;
+            margin-top: 10px;
+        }
+
+        .quadro2 {
+            min-width: 300px;
             height: 300px;
             text-align: center;
             background-color: aquamarine;
             line-height: 300px;
             margin-top: 10px;
         }
+
     </style>
 </head>
 <body>
     <div class="frontboard">
-        <div class="frontboard quadro1">
+        <div class="quadro1">
             <p>BLOCO 1</p>
         </div>
-        <div class="frontboard quadro2">
+        <div class="quadro2">
             <p>BLOCO 2</p>
         </div>
     </div>
