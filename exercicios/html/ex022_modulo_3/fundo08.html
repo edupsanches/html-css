@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando position</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        .elementoQuadrado {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+        }
+
+        .elementoQuadrado1 {
+            position: absolute;
+            right: 0%;
+            color: white;
+            background-color: purple;
+        }
+
+        .elementoQuadrado2 {
+            position: absolute;
+            right: 50%;
+            bottom: 50%;
+            transform: translate(50%, 50%);
+            color: white;
+            background-color: green;
+        }
+
+        .elementoQuadrado3 {
+            position: absolute;
+            background-color: red;
+        }
+
+        .elementoInterno {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="elementoQuadrado elementoQuadrado1">
+        <p>APENAS UMA DIV</p>
+    </div>
+    <div class="elementoQuadrado elementoQuadrado2">
+        <p>OUTRA DIV</p>
+    </div>
+    <div class="elementoQuadrado elementoQuadrado3">
+        <div class="elementoInterno">
+            <p>INTERNO</p>
+        </div>
+    </div>
+</body>
+</html>
