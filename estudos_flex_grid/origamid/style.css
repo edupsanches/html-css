@@ -10,6 +10,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 .header {
     background-color: #1d1e20;
     display: flex;
@@ -30,4 +35,22 @@
 .menu a {
     margin-left: 10px;
     padding: 10px;
+}
+
+.titulo {
+    text-align: center;
+    margin: 100px 0 30px 0;
+    font-size: 2rem;
+}
+
+.imagens {
+    max-width: 800px;
+    flex-wrap: wrap;
+    display: flex;
+    margin: auto;
+}
+
+.imagens > div {
+    flex: 1 1 200px;
+    margin: 10px;
 }
