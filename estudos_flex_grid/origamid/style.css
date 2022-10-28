@@ -10,6 +10,8 @@
     box-sizing: border-box;
 }
 
+/* FLEXBOX */
+
 img {
     max-width: 100%;
     display: block;
@@ -44,7 +46,7 @@ img {
 }
 
 .imagens {
-    max-width: 800px;
+    max-width: 879px;
     flex-wrap: wrap;
     display: flex;
     margin: auto;
@@ -53,4 +55,28 @@ img {
 .imagens > div {
     flex: 1 1 200px;
     margin: 10px;
+}
+
+/* GRID 1 */
+
+.grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 879px;
+    margin: auto;
+    margin-bottom: 100px;
+    gap: 20px;
+}
+
+.grid1 > div:nth-child(n + 4) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+
+.anuncio {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: tomato;
 }
