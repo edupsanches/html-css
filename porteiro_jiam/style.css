@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 body {
@@ -12,12 +13,29 @@ body {
 
 .logo_header {
     display: flex;
+    width: auto;
+    height: 130px;
     justify-content: right;
     padding: 30px;
 }
 
-.logo_jiam {
-    max-width: auto;
+.logos_cima {
+    max-width: 100%;
     display: block;
-    margin: 30px auto;
+}
+
+.logo_jiam {
+    width: 70vw;
+    max-width: 1200px;
+    min-width: 450px;
+    margin: 30px auto 50px auto;
+    display: block;
+}
+
+.grafismo {
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    left: 100px;
+    height: 110vh;
 }
