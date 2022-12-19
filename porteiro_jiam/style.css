@@ -19,17 +19,37 @@ body {
     padding: 30px;
 }
 
-.logos_cima {
-    max-width: 100%;
-    display: block;
-}
-
 .logo_jiam {
     width: 70vw;
+    display: block;
     max-width: 1200px;
     min-width: 450px;
     margin: 30px auto 50px auto;
+}
+
+.logos_cima {
+    max-width: 100%;
     display: block;
+    padding: 20px;
+    margin: auto;
+}
+
+.logos_fileira_cima {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logos_fileira_cima div {
+    flex: 1 1 200px;
+}   
+
+.baixo {
+    padding: 0 80px;
 }
 
 .grafismo {
@@ -38,4 +58,10 @@ body {
     z-index: -1;
     left: 100px;
     height: 110vh;
+}
+
+@media (max-width: 900px) {
+    .baixo {
+        padding: 0;
+    }
 }
