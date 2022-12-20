@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -56,12 +57,60 @@ body {
     position: absolute;
     top: -10px;
     z-index: -1;
-    left: 100px;
+    left: 13vw;
     height: 110vh;
 }
 
 @media (max-width: 900px) {
     .baixo {
         padding: 0;
+    }
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin: 30px;
+}
+
+.contato {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.whatsapp {
+    font-weight: bolder;
+}
+
+button {
+    width: 210px;
+    height: 45px;
+    border: none;
+    color: #F36E1D;
+    background-color: #f6cb45;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.entrar {
+    position: absolute;
+    right: 6vw;
+}
+
+footer a {
+    font-weight: bolder;
+    color: #f6cb45;
+}
+
+@media(max-width: 1000px) {
+    .entrar {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        margin-top: 90px;
     }
 }
