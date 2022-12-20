@@ -76,6 +76,7 @@ footer {
 }
 
 .contato {
+    width: 100vw;
     position: absolute;
     left: 50%;
     transform: translate(-50%);
@@ -107,10 +108,15 @@ footer a {
 }
 
 @media(max-width: 1000px) {
+    .logo_header {
+        justify-content: center;
+    }
+
     .entrar {
         position: absolute;
         left: 50%;
         transform: translate(-50%);
-        margin-top: 90px;
+        margin: 70px auto;
+        padding-bottom: 45px;
     }
 }
