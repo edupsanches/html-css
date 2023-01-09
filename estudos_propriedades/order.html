@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Testando order</title>
+    <style>
+        .container {
+            width: 800px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .item {
+            margin: 15px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        .texto1 {
+            order: 2;
+        }
+
+        .texto2 {
+            order: 3;
+        }
+
+        .texto3 {
+            order: 4;
+        }
+
+        .texto4 {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item texto1">
+            TEXTO 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus?
+        </div>
+        <div class="item texto2">
+            TEXTO 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus?
+        </div>
+        <div class="item texto3">
+            TEXTO 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus?
+        </div>
+        <div class="item texto4">
+            TEXTO 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, voluptatibus?
+        </div>
+    </div>
+</body>
+</html>

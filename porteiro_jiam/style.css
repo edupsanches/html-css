@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-decoration: none;
     /* border: 1px solid black; */
 }
 
@@ -24,7 +25,7 @@ body {
     width: 70vw;
     display: block;
     max-width: 1200px;
-    min-width: 450px;
+    min-width: 300px;
     margin: 30px auto 50px auto;
 }
 
@@ -35,7 +36,7 @@ body {
     margin: auto;
 }
 
-.logos_fileira_cima {
+.logos_fileira {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
@@ -45,7 +46,7 @@ body {
     margin: 0 auto;
 }
 
-.logos_fileira_cima div {
+.logos_fileira div {
     flex: 1 1 300px;
 }   
 
@@ -97,6 +98,17 @@ button {
     font-size: 16px;
 }
 
+.btn_padrao {
+    color: #F36E1D;
+}
+
+button:hover {
+    border: none;
+    transition: 0.3s;
+    color: #F36E1D;
+    background-color: white;
+}
+
 .entrar {
     position: absolute;
     right: 6vw;
@@ -107,16 +119,22 @@ footer a {
     color: #f6cb45;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1030px) {
     .logo_header {
-        justify-content: center;
+        display: none;
     }
-
+    
     .entrar {
         position: absolute;
-        left: 50%;
-        transform: translate(-50%);
-        margin: 70px auto;
-        padding-bottom: 45px;
+        right: 50%;
+        transform: translate(50%);
+    }
+    
+    .logos_fileira {
+        display: none;
+    }
+
+    .contato {
+        display: none;
     }
 }
