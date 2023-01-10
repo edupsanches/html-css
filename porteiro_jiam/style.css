@@ -10,6 +10,8 @@
 }
 
 body {
+    width: 100%;
+    height: auto;
     background-color: rgb(244, 110, 30);
 }
 
@@ -122,6 +124,10 @@ footer a {
         display: none;
     }
     
+    .grafismo {
+        display: none;
+    }
+
     .logo_jiam {
         margin-top: 80px;
     }
@@ -138,15 +144,17 @@ footer a {
 
     .contato {
         font-size: 12px;
-        position: relative;
-        top: 250px;
+        position: absolute;
+        top: 90vh;
     }
 
-    .logo_mantecorp_rodape .logo_mantecorp.rodape {
+    .logo_mantecorp.rodape {
         display: block;
-        margin: auto;
-        position: relative;
-        top: 140px;
-        width: 140px;
+        position: absolute;
+        right: 50vw;
+        transform: translate(50%);
+        top: 80vh;
+        width: 150px;
+        /* width: 140px; */
     }
 }
