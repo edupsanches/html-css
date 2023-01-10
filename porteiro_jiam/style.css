@@ -62,12 +62,6 @@ body {
     height: 110vh;
 }
 
-@media (max-width: 900px) {
-    .baixo {
-        padding: 0;
-    }
-}
-
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
@@ -119,11 +113,19 @@ footer a {
     color: #f6cb45;
 }
 
+.logo_mantecorp.rodape {
+    display: none;
+}
+
 @media (max-width: 1030px) {
     .logo_header {
         display: none;
     }
     
+    .logo_jiam {
+        margin-top: 80px;
+    }
+
     .entrar {
         position: absolute;
         right: 50%;
@@ -135,6 +137,16 @@ footer a {
     }
 
     .contato {
-        display: none;
+        font-size: 12px;
+        position: relative;
+        top: 250px;
+    }
+
+    .logo_mantecorp_rodape .logo_mantecorp.rodape {
+        display: block;
+        margin: auto;
+        position: relative;
+        top: 140px;
+        width: 140px;
     }
 }
