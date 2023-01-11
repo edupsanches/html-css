@@ -6,7 +6,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 body {
@@ -31,7 +31,7 @@ body {
     margin: 30px auto 50px auto;
 }
 
-.logos_fileira {
+.logos_fileira_cima {
     width: 70vw;
     display: flex;
     flex-wrap: wrap;
@@ -41,30 +41,28 @@ body {
     margin: 0 auto;
 }
 
-.logos_fileira .baixo {
-    padding: 0 200px 0;
+.logos_fileira_baixo {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 645px;
+    margin: 0 auto;
 }
 
 .logos_cima {
     max-width: 25%;
     display: block;
-    padding: 30px;
+    padding: 30px 30px 20px;
     margin: auto;
 }
 
 .logos_baixo {
-    max-width: 25%;
+    max-width: 32%;
     display: block;
-    padding: 0px 20px 30px;
-    margin: auto;
-}
-
-.logos_fileira div {
-    flex: 1 1 300px;
-}   
-
-.baixo {
-    padding: 0 30px;
+    padding: 15px 18px 30px;
+    margin: 0 auto 20px;
 }
 
 .grafismo {
@@ -90,6 +88,10 @@ footer {
     transform: translate(-50%);
 }
 
+.contato_reduzido {
+    display: none;
+}
+
 .whatsapp {
     font-weight: bolder;
 }
@@ -106,6 +108,7 @@ button {
 }
 
 .btn_padrao {
+    text-align: center;
     padding: 20px 70px;
     color: #F36E1D;
 }
@@ -122,12 +125,16 @@ button:hover {
     right: 6vw;
 }
 
+.clique_aqui:hover {
+    text-decoration: underline;
+}
+
 footer a {
     font-weight: bolder;
     color: #f6cb45;
 }
 
-.logo_mantecorp.rodape {
+.logo_mantecorp_rodape {
     display: none;
 }
 
@@ -146,32 +153,55 @@ footer a {
     }
 
     .logo_jiam {
-        margin-top: 80px;
+        margin-top: 15vh;
     }
 
     .entrar {
+        width: 60vw;
+        margin-top: 25px;
         position: absolute;
         right: 50%;
         transform: translate(50%);
     }
+
+    button {
+        width: 60vw
+    }
+
+    .btn_padrao {
+        padding: 15px 19vw;
+        width: 60vw;
+    }
     
-    .logos_fileira {
+    .logos_produtos {
         display: none;
     }
 
-    .contato {
-        font-size: 12px;
-        position: absolute;
-        top: 90vh;
+    .cadastrar {
+        margin-top: 20px;
     }
 
-    .logo_mantecorp.rodape {
-        display: block;
+    .rodape {
+        width: 100%;
         position: absolute;
-        right: 50vw;
+        margin: 0 auto 40px;
+        right: 50%;
         transform: translate(50%);
-        top: 76vh;
-        width: 150px;
-        /* width: 140px; */
+        bottom: 0;
+    }
+
+    .contato {
+        display: none;
+    }
+
+    .contato_reduzido {
+        display: block;
+    }
+
+    .logo_mantecorp_rodape {
+        display: block;
+        width: 125px;
+        position: relative;
+        margin: 0 auto 23px;
     }
 }
