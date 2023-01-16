@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de posicionamento</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .bloco-centro {
+            /* width: 900px; */
+            border: 1px solid black;
+            margin: 100px 100px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .item {
+            justify-content: center;
+            max-width: 250px;
+            min-width: 150px;
+            height: 180px;
+            margin: 20px 20px;
+            background-color: tomato;
+            text-align: center;
+            line-height: 180px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="bloco-centro">
+            <div class="item">Bloco 1</div>
+            <div class="item">Bloco 2</div>
+            <div class="item">Bloco 3</div>
+            <div class="item">Bloco 4</div>
+            <div class="item">Bloco 5</div>
+        </div>
+    </div>
+</body>
+</html>
