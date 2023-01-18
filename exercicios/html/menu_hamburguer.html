@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Menu Hamburguer</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            /* border: 1px solid black; */
+        }
+
+        body {
+            background-color: blueviolet;
+        }
+
+        .one,
+        .two,
+        .three {
+            background-color: white;
+            height: 5px;
+            width: 100%;
+            margin: 6px auto;
+        }
+
+        .menu-toggle {
+            width: 40px;
+            height: 30px;
+            margin: auto;
+            transform: translate(-2px, -12px);
+        }
+
+        .menu-section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-section">
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+    </div>    
+</body>
+</html>
